@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="https://www.dropbox.com/scl/fi/bnlbcwbjpx7uepl6ivji7/Krazy-Notesy-Logo.png?raw=0" alt="Krazy Notesy Logo" width="200"/>
+  <img src="https://www.dropbox.com/scl/fi/bnlbcwbjpx7uepl6ivji7/Krazy-Notesy-Logo.png?raw=1" alt="Krazy Notesy Logo" width="200"/>
 </p>
 
 <h1 align="center">🚀 Krazy Notesy Instagram Auto Uploader</h1>
 
 <p align="center">
-  <img src="https://www.dropbox.com/scl/fi/kakbm1mycro7ekts723ey/Krazy-Notesy-Banner.png?raw=0" alt="Krazy Notesy Banner"/>
+  <img src="https://www.dropbox.com/scl/fi/kakbm1mycro7ekts723ey/Krazy-Notesy-Banner.png?raw=1" alt="Krazy Notesy Banner"/>
 </p>
 
 ---
