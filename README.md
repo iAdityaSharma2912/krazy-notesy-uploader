@@ -5,7 +5,7 @@
 <h1 align="center">🚀 Krazy Notesy Instagram Auto Uploader</h1>
 
 <p align="center">
-  <img src="https://www.dropbox.com/scl/fi/kakbm1mycro7ekts723ey/Krazy-Notesy-Banner.png?raw=1" alt="Krazy Notesy Banner"/>
+  <img src="https://previews.dropbox.com/p/thumb/ACtlMxn07F_2LTgr41fRDsYNmo2_UiCR0kQIPrXKwIQ5XRTVJLPbfx3Y8BLxjZ2gNOrJ-Z3IIO2lI_YNBAk_MJMCf6AcLlq39RQO1hko6blH-_C1qmvSOqf5ZnROEseTbTyrF_fDvJsKKEqpnlvYMKAiUta2DBi7EQuseTMKM63LRKSAkzKQ1sYOlvCKZtPCPQr1esQrhR2E6YodXJEMsc-SuKGAkZ-6X0wp1HLi8Yly--skjbcWOrNBme9kPg5MDqPIMwQcejln7USVT5TG4x5dMX1xpsKBELg0E5pUtIOBoZ2Z_ruME3IwyY8te1BZokFwiJ5SvmuefQAfaaaljv6a/p.png?is_prewarmed=true" alt="Krazy Notesy Banner"/>
 </p>
 
 ---
