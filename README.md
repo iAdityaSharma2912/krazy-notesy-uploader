@@ -1,4 +1,4 @@
-# Insta Auto Uploader 🤖📸
+# Krazy Notesy Uploader 🤖📸
 
 This bot auto-uploads images and videos from a folder to Instagram, with AI-generated captions using the BLIP model.
 Runs daily via Render cloud cron job.
