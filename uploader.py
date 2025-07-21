@@ -1,21 +1,24 @@
 import os
 import random
 import json
+import urllib.request
 from instagrapi import Client
-from dotenv import load_dotenv
 
-# Load environment variables
-load_dotenv()
+# Load Instagram credentials from environment variables
 IG_USERNAME = os.getenv("INSTAGRAM_USERNAME")
 IG_PASSWORD = os.getenv("INSTAGRAM_PASSWORD")
 
-# Config
-MEDIA_FOLDER = "media_folder"  # Folder path where your images/videos are stored
-HISTORY_FILE = "posted_history.json"
+# Configurations
+MEDIA_LINKS_FILE = "media_links.json"   # JSON file with list of video/image URLs
+HISTORY_FILE = "posted_history.json"    # To avoid reposting same media
 
-# Initialize Instagram Client
+# Initialize Instagram client
 cl = Client()
 cl.login(IG_USERNAME, IG_PASSWORD)
+
+# Load media URLs
+with open(MEDIA_LINKS_FILE, "r") as file:
+    media_links = json.load(file)
 
 # Load posted history
 if os.path.exists(HISTORY_FILE):
@@ -24,8 +27,23 @@ if os.path.exists(HISTORY_FILE):
 else:
     posted_history = []
 
-# === Offline Captions List ===
-captions_list = ["Coffee bhi chahiye, wi-fi bhi aur pyaar bhi. Multitasking on point! #KrazyNotesy",
+# Pick unposted media
+unposted_links = [link for link in media_links if link not in posted_history]
+
+if not unposted_links:
+    print("All media already posted!")
+    exit()
+
+media_url = random.choice(unposted_links)
+file_extension = media_url.split(".")[-1]
+local_file = f"media_file.{file_extension}"
+
+# Download media
+print(f"Downloading media from: {media_url}")
+urllib.request.urlretrieve(media_url, local_file)
+
+# Generate random caption (you can customize)
+captions = ["Coffee bhi chahiye, wi-fi bhi aur pyaar bhi. Multitasking on point! #KrazyNotesy",
 "Monday aaya, mood gaya! #KrazyNotesy",
 "Aaj kal to weight sirf tension ka badh raha hai... #KrazyNotesy",
 "Sorry yaar, kal se pakka gym! #KrazyNotesy",
@@ -143,49 +161,21 @@ captions_list = ["Coffee bhi chahiye, wi-fi bhi aur pyaar bhi. Multitasking on p
 "Kitni bhi sleep le lo, neend ki talash khatam nahi hoti. #funny #sleep #tired #KrazyNotesy"
  
 ]
+caption = random.choice(captions)
 
-def generate_caption_with_hashtags(filename):
-    return random.choice(captions_list)
-
-def pick_unposted_media():
-    all_files = os.listdir(MEDIA_FOLDER)
-    unposted_files = [f for f in all_files if f not in posted_history]
-
-    if not unposted_files:
-        print("All media has been posted!")
-        return None
-
-    return random.choice(unposted_files)
-
-def upload_to_instagram(file_path, caption):
-    ext = file_path.lower().split('.')[-1]
-    if ext in ['jpg', 'jpeg', 'png']:
-        cl.photo_upload(file_path, caption)
-    elif ext in ['mp4', 'mov']:
-        cl.video_upload(file_path, caption, thumbnail = None)
-    else:
-        print(f"Unsupported file type: {ext}")
-        return False
-    return True
-
-def save_history(file_name):
-    posted_history.append(file_name)
-    with open(HISTORY_FILE, "w") as file:
-        json.dump(posted_history, file)
-
-# === Main Execution ===
-media_file = pick_unposted_media()
-
-if media_file:
-    file_path = os.path.join(MEDIA_FOLDER, media_file)
-    print(f"Posting: {media_file}")
-    caption = generate_caption_with_hashtags(media_file)
-    print(f"Caption Generated:\n{caption}\n")
-
-    if upload_to_instagram(file_path, caption):
-        save_history(media_file)
-        print("Upload successful and history updated!")
-    else:
-        print("Upload failed.")
+# Upload media
+print(f"Uploading to Instagram: {local_file}")
+if file_extension in ['jpg', 'jpeg', 'png']:
+    cl.photo_upload(local_file, caption)
+elif file_extension in ['mp4', 'mov']:
+    cl.video_upload(local_file, caption)
 else:
-    print("No new media to post.")
+    print(f"Unsupported file type: {file_extension}")
+    exit()
+
+# Save to history
+posted_history.append(media_url)
+with open(HISTORY_FILE, "w") as file:
+    json.dump(posted_history, file)
+
+print("Upload successful! History updated.")
