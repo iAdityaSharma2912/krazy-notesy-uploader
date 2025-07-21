@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://www.dropbox.com/scl/fi/bnlbcwbjpx7uepl6ivji7/Krazy-Notesy-Logo.png?rlkey=2oqyvwo989oxt9vupi3jee4q7&st=uzzzir5m&dl=0" alt="Krazy Notesy Logo" width="200"/>
+  <img src="https://github.com/iAdityaSharma2912/Files/blob/main/Krazy%20Notesy%20Logo.png" alt="Krazy Notesy Logo" width="200"/>
 </p>
 
 <h1 align="center">🚀 Krazy Notesy Instagram Auto Uploader</h1>
