@@ -1,4 +1,2 @@
-instagrapi
-Pillow
-transformers
-torch
+instagrapi==1.17.0
+python-dotenv
