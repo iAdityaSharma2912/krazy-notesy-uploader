@@ -138,6 +138,3 @@ pip install openai moviepy praw tweepy
 This project is licensed under the MIT License – free to use, modify, and share.
 
 ---
-
-Do you want me to also **add a fancy banner (like using shields.io badges for tech stack + workflow status)** at the top of the README to make it look **professional GitHub project style**?
-
