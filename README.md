@@ -2,12 +2,12 @@
   <img src="https://github.com/iAdityaSharma2912/Files/blob/main/Krazy%20Notesy%20Logo.png" alt="Krazy Notesy Logo" width="200"/>
 </p>
 
-<h1 align="center">🚀 Krazy Notesy  Auto Uploader</h1>
+<h1 align="center"> Krazy Notesy </h1>
 
 <p align="center">
   <img src="https://github.com/iAdityaSharma2912/Files/blob/main/Krazy%20Notesy%20Banner.png" alt="Krazy Notesy Banner"/>
 </p>
-# 🚀 Krazy Notesy
+<h2 align="center"> Krazy Notesy </h2>
 
 **Krazy Notesy** is an **AI-powered social media automation system** built to make life easier for **content creators**.
 
