@@ -7,76 +7,67 @@
 <p align="center">
   <img src="https://github.com/iAdityaSharma2912/Files/blob/main/Krazy%20Notesy%20Banner.png" alt="Krazy Notesy Banner"/>
 </p>
-Krazy Notesy is an AI-powered social media automation system built to make life easier for content creators.
+# 🚀 Krazy Notesy
 
-It can handle any type of media file (videos, images, GIFs, reels, shorts, memes, animations, etc.) and automatically:
+**Krazy Notesy** is an **AI-powered social media automation system** built to make life easier for **content creators**.
 
-Generates captions & hashtags using AI 🤖
+It can handle **any type of media file** (videos, images, GIFs, reels, shorts, memes, animations, etc.) and automatically:
 
-Schedules posts across multiple platforms
+* Generates **captions & hashtags** using AI 🤖
+* **Schedules posts** across multiple platforms
+* Formats & optimizes media for each platform
+* Tracks performance with an **analytics dashboard** 📊
 
-Formats & optimizes media for each platform
+Krazy Notesy = Your **hands-free posting assistant** 🕒
 
-Tracks performance with an analytics dashboard 📊
+---
 
-Krazy Notesy = Your hands-free posting assistant 🕒
+## ✨ Features
 
-✨ Features
+* 🎬 Upload any media file (videos, images, GIFs, reels, memes…)
+* 🤖 Auto-generate creative captions & trending hashtags
+* 📅 Schedule posts in advance (set it & forget it)
+* 📊 Analytics dashboard (views, likes, comments, engagement)
+* 🔄 Automatic resizing & formatting for each platform
+* 🌐 Multi-platform posting (Instagram, YouTube, Reddit, X/Twitter)
+* ⚙️ Automated daily posting via **GitHub Actions + CRON jobs**
 
-🎬 Upload any media file (videos, images, GIFs, reels, memes…)
+---
 
-🤖 Auto-generate creative captions & trending hashtags
+## 🏗️ Tech Stack
 
-📅 Schedule posts in advance (set it & forget it)
+### **Frontend**
 
-📊 Analytics dashboard (views, likes, comments, engagement)
+* React.js (Vite)
+* Tailwind CSS
+* ShadCN / Material UI
+* Recharts (analytics graphs)
+* Framer Motion (animations)
 
-🔄 Automatic resizing & formatting for each platform
+### **Backend**
 
-🌐 Multi-platform posting (Instagram, YouTube, Reddit, X/Twitter)
+* Node.js + Express
+* MongoDB Atlas / Firebase Firestore
+* REST API with JWT Authentication
 
-⚙️ Automated daily posting via GitHub Actions + CRON jobs
+### **AI & Automation**
 
-🏗️ Tech Stack
-Frontend
+* OpenAI API → Captions & Hashtags
+* Python → Automation Scripts (MoviePy, FFmpeg, PRAW, Tweepy)
+* GitHub Actions → Scheduled posting & automation
 
-React.js (Vite)
+### **Deployment**
 
-Tailwind CSS
+* Frontend → Vercel / Netlify
+* Backend → Render / Railway
+* Database → MongoDB Atlas / Firebase
+* Secrets → GitHub Actions Encrypted Secrets
 
-ShadCN / Material UI
+---
 
-Recharts (analytics graphs)
+## 📂 Project Structure
 
-Framer Motion (animations)
-
-Backend
-
-Node.js + Express
-
-MongoDB Atlas / Firebase Firestore
-
-REST API with JWT Authentication
-
-AI & Automation
-
-OpenAI API → Captions & Hashtags
-
-Python → Automation Scripts (MoviePy, FFmpeg, PRAW, Tweepy)
-
-GitHub Actions → Scheduled posting & automation
-
-Deployment
-
-Frontend → Vercel / Netlify
-
-Backend → Render / Railway
-
-Database → MongoDB Atlas / Firebase
-
-Secrets → GitHub Actions Encrypted Secrets
-
-📂 Project Structure
+```
 krazy-notesy/
 ├── frontend/    # React + Tailwind (Dashboard UI)
 ├── backend/     # Node.js + Express API
@@ -84,54 +75,69 @@ krazy-notesy/
 ├── database/    # MongoDB / Firebase config
 └── .github/
     └── workflows/   # GitHub Actions automation
+```
 
-⚙️ Setup Instructions
-1. Clone Repo
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone Repo
+
+```bash
 git clone https://github.com/your-username/krazy-notesy.git
 cd krazy-notesy
+```
 
-2. Frontend Setup
+### 2. Frontend Setup
+
+```bash
 cd frontend
 npm install
 npm run dev
+```
 
+👉 Runs at: `http://localhost:5173`
 
-👉 Runs at: http://localhost:5173
+### 3. Backend Setup
 
-3. Backend Setup
+```bash
 cd ../backend
 npm install
 npx nodemon server.js
+```
 
+👉 Runs at: `http://localhost:5000`
 
-👉 Runs at: http://localhost:5000
+### 4. Python Scripts Setup
 
-4. Python Scripts Setup
+```bash
 cd ../scripts
 python -m venv venv
 venv\Scripts\activate   # Windows
 pip install openai moviepy praw tweepy
+```
 
-🚀 Roadmap
+---
 
- Project setup (frontend, backend, scripts)
+## 🚀 Roadmap
 
- Build dashboard UI (upload panel, schedule, analytics)
+* [x] Project setup (frontend, backend, scripts)
+* [ ] Build dashboard UI (upload panel, schedule, analytics)
+* [ ] Connect backend API & database
+* [ ] AI caption & hashtag generator
+* [ ] Multi-platform posting automation
+* [ ] Scheduler with GitHub Actions
+* [ ] Deployment (Vercel + Railway + MongoDB Atlas)
+* [ ] Analytics integration (views, likes, comments)
+* [ ] Extra features (auto watermarking, subtitle generation, SaaS model)
 
- Connect backend API & database
+---
 
- AI caption & hashtag generator
-
- Multi-platform posting automation
-
- Scheduler with GitHub Actions
-
- Deployment (Vercel + Railway + MongoDB Atlas)
-
- Analytics integration (views, likes, comments)
-
- Extra features (auto watermarking, subtitle generation, SaaS model)
-
-📜 License
+## 📜 License
 
 This project is licensed under the MIT License – free to use, modify, and share.
+
+---
+
+Do you want me to also **add a fancy banner (like using shields.io badges for tech stack + workflow status)** at the top of the README to make it look **professional GitHub project style**?
+
