@@ -2,90 +2,136 @@
   <img src="https://github.com/iAdityaSharma2912/Files/blob/main/Krazy%20Notesy%20Logo.png" alt="Krazy Notesy Logo" width="200"/>
 </p>
 
-<h1 align="center">🚀 Krazy Notesy Instagram Auto Uploader</h1>
+<h1 align="center">🚀 Krazy Notesy  Auto Uploader</h1>
 
 <p align="center">
   <img src="https://github.com/iAdityaSharma2912/Files/blob/main/Krazy%20Notesy%20Banner.png" alt="Krazy Notesy Banner"/>
 </p>
+Krazy Notesy is an AI-powered social media automation system built to make life easier for content creators.
 
----
+It can handle any type of media file (videos, images, GIFs, reels, shorts, memes, animations, etc.) and automatically:
 
-## 🎉 What is this?
+Generates captions & hashtags using AI 🤖
 
-**Krazy Notesy Auto Uploader** is a Python-powered bot that:
-- Automatically picks videos/images from Dropbox.
-- Generates fun, Hinglish captions automatically.
-- Uploads content to your Instagram page **daily**, using GitHub Actions.
-- Fully automated. Runs even if your system is off.
+Schedules posts across multiple platforms
 
----
+Formats & optimizes media for each platform
 
-## 📂 Project Structure
+Tracks performance with an analytics dashboard 📊
 
-krazy_notesy_uploader/
-├── media_links.json
-├── uploader.py
-├── fetch_dropbox_links.py
-├── captions.py
-├── .github/
-│ └── workflows/
-│ └── schedule.yml
-├── .env
-└── README.md
-
-markdown
-Copy
-Edit
-
----
-
-## ⚙️ Setup Guide
-
-1. **Clone the Repo**  
-   `git clone https://github.com/yourusername/krazy_notesy_uploader.git`
-
-2. **Add Secrets in GitHub**  
-   Go to your repo settings → Secrets → Actions:
-   - `INSTAGRAM_USERNAME`
-   - `INSTAGRAM_PASSWORD`
-   - `DROPBOX_ACCESS_TOKEN`
-
-3. **Prepare Dropbox Folder**
-   - Upload your media to a specific Dropbox folder (example: `/krazy_notesy_media`).
-
-4. **Generate `media_links.json`**  
-   Run:
-   ```bash
-   python fetch_dropbox_links.py
-This auto-generates direct download links for all media files.
-
-GitHub Actions Automation
-
-The .github/workflows/schedule.yml handles daily posting.
-
-Customizable schedule via cron jobs.
-
-🎬 How It Works
-fetch_dropbox_links.py – Scans Dropbox folder, generates links.
-
-uploader.py – Picks unposted file, generates caption, uploads to Instagram.
-
-captions.py – Stores hundreds of pre-generated Hinglish funny captions.
-
-schedule.yml – Automates daily posting via GitHub Actions.
+Krazy Notesy = Your hands-free posting assistant 🕒
 
 ✨ Features
-😄 Hinglish Funny Captions
 
-📸 Automatic Uploads
+🎬 Upload any media file (videos, images, GIFs, reels, memes…)
 
-☁️ Dropbox-Powered Storage
+🤖 Auto-generate creative captions & trending hashtags
 
-🤖 100% Automated via GitHub Actions
+📅 Schedule posts in advance (set it & forget it)
 
-🛡️ Secure using GitHub Secrets
+📊 Analytics dashboard (views, likes, comments, engagement)
 
-📢 Follow the Fun
-Stay connected with #KrazyNotesy for more!
+🔄 Automatic resizing & formatting for each platform
 
-<p align="center"> <b>Made with ❤️ for Krazy Notesy</b> </p> ```
+🌐 Multi-platform posting (Instagram, YouTube, Reddit, X/Twitter)
+
+⚙️ Automated daily posting via GitHub Actions + CRON jobs
+
+🏗️ Tech Stack
+Frontend
+
+React.js (Vite)
+
+Tailwind CSS
+
+ShadCN / Material UI
+
+Recharts (analytics graphs)
+
+Framer Motion (animations)
+
+Backend
+
+Node.js + Express
+
+MongoDB Atlas / Firebase Firestore
+
+REST API with JWT Authentication
+
+AI & Automation
+
+OpenAI API → Captions & Hashtags
+
+Python → Automation Scripts (MoviePy, FFmpeg, PRAW, Tweepy)
+
+GitHub Actions → Scheduled posting & automation
+
+Deployment
+
+Frontend → Vercel / Netlify
+
+Backend → Render / Railway
+
+Database → MongoDB Atlas / Firebase
+
+Secrets → GitHub Actions Encrypted Secrets
+
+📂 Project Structure
+krazy-notesy/
+├── frontend/    # React + Tailwind (Dashboard UI)
+├── backend/     # Node.js + Express API
+├── scripts/     # Python automation scripts
+├── database/    # MongoDB / Firebase config
+└── .github/
+    └── workflows/   # GitHub Actions automation
+
+⚙️ Setup Instructions
+1. Clone Repo
+git clone https://github.com/your-username/krazy-notesy.git
+cd krazy-notesy
+
+2. Frontend Setup
+cd frontend
+npm install
+npm run dev
+
+
+👉 Runs at: http://localhost:5173
+
+3. Backend Setup
+cd ../backend
+npm install
+npx nodemon server.js
+
+
+👉 Runs at: http://localhost:5000
+
+4. Python Scripts Setup
+cd ../scripts
+python -m venv venv
+venv\Scripts\activate   # Windows
+pip install openai moviepy praw tweepy
+
+🚀 Roadmap
+
+ Project setup (frontend, backend, scripts)
+
+ Build dashboard UI (upload panel, schedule, analytics)
+
+ Connect backend API & database
+
+ AI caption & hashtag generator
+
+ Multi-platform posting automation
+
+ Scheduler with GitHub Actions
+
+ Deployment (Vercel + Railway + MongoDB Atlas)
+
+ Analytics integration (views, likes, comments)
+
+ Extra features (auto watermarking, subtitle generation, SaaS model)
+
+📜 License
+
+This project is licensed under the MIT License – free to use, modify, and share.
