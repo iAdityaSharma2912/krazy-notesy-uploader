@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/iAdityaSharma2912/krazy-notesy/blob/main/Media/Krazy%20Notesy%20Tagline%20V2.png"/>
+  <img src="https://github.com/iAdityaSharma2912/krazy-notesy/blob/main/Media/Krazy%20Notesy%20Banner.png"/>
   
 </p>
 
