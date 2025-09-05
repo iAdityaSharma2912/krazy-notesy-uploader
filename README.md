@@ -1,8 +1,9 @@
 <p align="center">
-  <img src="https://github.com/iAdityaSharma2912/krazy-notesy/blob/main/Media/Krazy%20Notesy%20Banner.png" alt="Krazy Notesy Banner"/>
+  <img src="https://github.com/iAdityaSharma2912/krazy-notesy/blob/main/Media/Krazy%20Notesy%20Tagline%20V2.png"/>
+  <h1 align="center">Krazy Notesy - One Click Infinite Chaos </h1>
 </p>
 
-<h1 align="center">Krazy Notesy - One Click Infinite Chaos </h1>
+
 
 **Krazy Notesy** is an **AI-powered social media automation system** built to make life easier for **content creators**.
 
