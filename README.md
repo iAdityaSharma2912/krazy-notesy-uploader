@@ -1,8 +1,4 @@
 <p align="center">
-  <img src="https://github.com/iAdityaSharma2912/krazy-notesy/blob/main/Krazy%20Notesy%20Logo%20V2.png" alt="Krazy Notesy Logo" width="200"/>
-</p>
-
-<p align="center">
   <img src="https://github.com/iAdityaSharma2912/krazy-notesy/blob/main/Krazy%20Notesy%20Banner.png" alt="Krazy Notesy Banner"/>
 </p>
 <h2 align="center"> One Click Infinite Chaos </h2>
@@ -19,7 +15,9 @@ It can handle **any type of media file** (videos, images, GIFs, reels, shorts, m
 Krazy Notesy = Your **hands-free posting assistant** 🕒
 
 ---
-
+<p align="left">
+  <img src="https://github.com/iAdityaSharma2912/krazy-notesy/blob/main/Krazy%20Notesy%20Logo%20V2.png" alt="Krazy Notesy Logo" width="200"/>
+</p>
 ## ✨ Features
 
 * 🎬 Upload any media file (videos, images, GIFs, reels, memes…)
